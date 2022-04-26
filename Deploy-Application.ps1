@@ -157,7 +157,7 @@ Try {
 			Invoke-HKCURegistrySettingsForAllUsers -RegistrySettings $HKCURegistrySettings
 
 			# Run the first time for logged in user so it doesn't pop up on next reboot before the script has time to turn it off
-			invoke-expression -Command C:\MSUDenver\preventteams.ps1
+			# invoke-expression -Command C:\MSUDenver\preventteams.ps1
 			Show-BalloonTip -BalloonTipText 'Teams automatic startup has been disabled for all users' -BalloonTipTitle 'MSU Denver ITS'
 
 		##*===============================================
